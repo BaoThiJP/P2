@@ -341,7 +341,7 @@ elif choice == 'Mô hình-Collaborative Filtering':
     # Show recommendations if new ID is provided
     if new_id:
         try:
-            st.write("### Top N Recommendations")
+            st.write("### Top 5 Recommendations")
             top_recommendations = get_recommendations(new_id, data_sub_1, algo)
             st.dataframe(top_recommendations)  # Display the top recommendations
         except ValueError as e:
